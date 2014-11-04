@@ -9,22 +9,9 @@ LinkedList.prototype.addToTail = function(value){
   else { this.tail = new LinkedList(value); }
 };
 
-LinkedList.prototype.removeHead = function(){
-  var head = this.head;
-  this.head = this.tail? this.tail.head : null;
-  this.tail = this.tail === null? null :
-    this.tail.tail? this.tail.tail : null;
-  return head;
-};
-
 LinkedList.prototype.contains = function(target){
   return this.head === target? true :
     this.tail? this.tail.contains(target) : false;
-};
-
-LinkedList.prototype.last = function() {
-  return this.tail? this.tail.last() :
-    this.head? this.head : null;
 };
 
 var list = new LinkedList(1);
