@@ -9,9 +9,8 @@
 <body>
   <div ng-app="recursionApp">
     <div ng-controller="recursionCtrl">
-      {{description}}
-      <button ng-click="getPricingData()">Get Pricing Data</button>
-      <button ng-click="getData()">Get Route Data</button>
+      <button ng-click="getPricingData()">Get Pricing Estimate</button>
+      <button ng-click="getTimeData()">Get Time Estimate</button>
       <div ng-repeat="circle in circles">circle {{circle}}</div>
     </div>
   </div>
