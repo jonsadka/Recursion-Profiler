@@ -4,14 +4,13 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular.js"></script>
   <script src="app.js"></script>
   <script src="controller.js"></script>
-  <script src="factory.js"></script>
+  <script src="directive.js"></script>
+  <script src="d3Factory.js"></script>
 </head>
 <body>
   <div ng-app="recursionApp">
     <div ng-controller="recursionCtrl">
-      <button ng-click="getPricingData()">Get Pricing Estimate</button>
-      <button ng-click="getTimeData()">Get Time Estimate</button>
-      <div ng-repeat="circle in circles">circle {{circle}}</div>
+      <div ng-repeat="circle in d3Data">circle {{circle}}</div>
     </div>
   </div>
 </body>
