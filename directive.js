@@ -1,4 +1,4 @@
-app.directive('bubbleChartDirective', ['d3', function(d3){
+app.directive('bubbleChartDirective', [function(){
 
   // Render Function
   function link(scope, el, attr){
@@ -26,9 +26,9 @@ app.directive('bubbleChartDirective', ['d3', function(d3){
     });
 
     // Function when data is added or removed
-    scope.$watch('data'), function(data){
-      console.log('data changed')
-    })
+    scope.$watch('data', function(data){
+      console.log('data changed');
+    });
 
   }
 

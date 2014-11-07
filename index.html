@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular.js"></script>
   <script src="app.js"></script>
   <script src="controller.js"></script>
   <script src="directive.js"></script>
-  <script src="d3Factory.js"></script>
 </head>
 <body>
-  <div ng-app="bubbleApp" ng-controller="recursionCtrl">
-    <bubble-directive data="shared.ourData" ng-repeat="chart in charts" ng-style="{width: 400 / charts.length + '%'}"></bubble-directive>
+  <div ng-app="bubbleApp" ng-controller="BubbleController">
+    <bubble-directive data="shared.ourData" ng-repeat="chart in charts" ng-style="{width: 400 / charts.length + '%'}">Hi</bubble-directive>
   </div>
 </body>
 
