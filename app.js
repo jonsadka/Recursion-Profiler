@@ -1,1 +1,1 @@
-var app = angular.module('recursionApp',[]);
+var app = angular.module('bubbleApp',[]);

@@ -1,5 +1,13 @@
-app.controller('recursionCtrl',['$scope', 'recursiveFactory', function($scope, recursiveFactory){
+app.controller('BubbleController',['$scope', '$window', 'recursiveFactory', function($scope, $window, recursiveFactory){
     
-    $scope.d3Data = [1,2,3,4,5,6];
-    
-  }])
+  $scope.charts = [1,2,3,4,5,6];
+
+  $scope.shared = {
+    ourData: [1,2,3,4,5,6]
+  };
+  
+  angular.element($window).on('resize', function(){
+    $scope.$apply();
+  });
+
+}]);

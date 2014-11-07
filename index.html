@@ -8,10 +8,8 @@
   <script src="d3Factory.js"></script>
 </head>
 <body>
-  <div ng-app="recursionApp">
-    <div ng-controller="recursionCtrl">
-      <div ng-repeat="circle in d3Data">circle {{circle}}</div>
-    </div>
+  <div ng-app="bubbleApp" ng-controller="recursionCtrl">
+    <bubble-directive data="shared.ourData" ng-repeat="chart in charts" ng-style="{width: 400 / charts.length + '%'}"></bubble-directive>
   </div>
 </body>
 
