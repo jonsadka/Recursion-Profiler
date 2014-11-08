@@ -9,7 +9,7 @@
 </head>
 <body>
   <div ng-app="bubbleApp" ng-controller="BubbleController">
-    <bubble-directive data="shared.ourData" ng-repeat="chart in charts" ng-style="{width: 400 / charts.length + '%'}">Hi</bubble-directive>
+    <bubble-chart-directive data="bubbleData" ng-repeat="bubble in bubbleData" ng-style="{width: 400 / charts.length + '%'}"></bubble-directive>
   </div>
 </body>
 
